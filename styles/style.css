@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+}
+
+.logo {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.search-bar {
+    display: flex;
+    width: 400px;
+    padding: 5px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(223, 223, 223, 0.438);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon::after {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    content: '4';
+    display: block;
+    background-color: #68D585;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+}
+
+/* INTRO */
+
+.intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.intro-img {
+    max-height: 200px;   
+}
+
+.intro-text__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-slogan {
+    color: #F64B4B;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 2em 0;
+}
+
+.intro-title {
+    color: #161C2D;
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro-subtitle {
+    text-align: center;
+    color: #57585c;
+}   
+
+.button {
+    background-color: #32936F;
+    padding: 1em;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.catalog-button {
+    letter-spacing: 2px;
+    color: #161C2D;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
